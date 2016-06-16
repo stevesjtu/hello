@@ -7,9 +7,21 @@
     <meta name="description" content="满纸荒唐言，一把辛酸泪 : ">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <script type="text/javascript"
-      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    <!-- mathjax config similar to math.stackexchange -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+            inlineMath: [ ['$', '$'] ],
+            displayMath: [ ['$$', '$$']],
+            processEscapes: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        },
+        messageStyle: "none",
+        "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+    });
     </script>
+
     <title>满纸荒唐言，一把辛酸泪</title>
   </head>
 
@@ -37,7 +49,12 @@
 <a id="welcome-to-my-first-page" class="anchor" href="#welcome-to-my-first-page" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>本人计算机系，学了点力学</h3>
 
 <!--<p>熟练掌握各种编程以及初中力学</p>-->
-$$\frac{1}{2}$$
+int main(int argc, char** argv)
+{
+    $\frac{1}{2}$
+    return 0;
+}
+
 
       </section>
     </div>

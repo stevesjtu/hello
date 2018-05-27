@@ -16,26 +16,32 @@
 
 `Mendeley/Endnote`不是pdf文件管理器，而是文献信息管理器。所以随时更新好每一篇文献的信息，包括作者(弄清姓和名)、杂志名称、发表年月、doi(通过doi号可以自动正确更新以上所有信息)等等。更新后的信息可以用于对本地文献快速检索，并且可以生成\*.bib文件，方便<img src="https://latex.codecogs.com/gif.latex?\inline&space;$\textsc{Bib}\TeX$" title="$\textsc{Bib}\TeX$" />把文献引入<img src="https://latex.codecogs.com/gif.latex?$\LaTeX$" title="$\LaTeX$" />文档。
 
-#### 2.5 LaTeX
+#### 2.5 <img src="https://latex.codecogs.com/gif.latex?$\LaTeX$" title="$\LaTeX$" />
+>LaTeX是排版工具，MS-Word是字处理软件
 
+一股不正之风经常说LaTeX一定比Word好用，实际的原因是我们学习Word的时候通常采用鼠标乱点法，反正所见即所得，结果实际上word并没有学好。而LaTeX怎么学习呢？照着模板以葫芦画瓢，模板实现了所有养眼的效果，然后得到了漂亮的文档，于是就产生了一种LaTeX比Word好的假象。任何公司、企业都不会选择用LaTeX作为文档编辑工具，但不幸的是，在做学术上，LaTeX还真比Word好用。
 
+我文章投得少，但是知道国外杂志最好选择LaTeX文档，他们的LaTeX模板一般最新的，但word模板通常年久失修。Word在三个不同平台上没有统一的格式，即使同一个平台不同版本之间也会有冲突。但是LaTeX不管什么平台和版本得出的文档始终是一致的。
 
 #### 2.2 SumatrPDF
 
 #### 2.3 Sublime
 
+
+
 #### 2.4 Git/Bitbucket
 
-
-#### 2.6 engauge
+#### 2.6 Engauge
 
 ### 3 编程工具
 
 #### 3.1 Visual Studio
 
-#### 3.2 Intel Compiler
+宇宙最好IDE名不虚传。在我有限的经验里，VS的代码静态分析(静态分析是指不编译不运行情况下，分析代码的语法、逻辑来验证代码的规范性和可靠性)性能是最好的。
 
 #### 3.3 Clion
+
+#### 3.2 Intel Compiler
 
 #### 3.4 CMake
 

@@ -10,7 +10,15 @@
 日常工具不是QQ或微信，是研究工作中日常使用的工具，分为文献、论文写作及公式推导、版本控制、数据处理和绘制科学图形等内容。
 
 #### 2.1 Mendeley/Endnote
-参考文献是idea的源泉。大量的pdf不能通过文件夹来维护，**一定**要用`Mendeley`或者`Endnote`进行维护。它们都有word的插件进行插入参考文献、修改参考文献格式等便捷的操作。Mendeley有云存储同步服务，目前可以同步2G的pdf文档，并且对于中文相对于Endnote较为友好。
+>参考文献是idea的源泉。
+
+大量的文献不能通过文件夹来维护，**一定**要用`Mendeley`或者`Endnote`进行维护。它们都有word的插件进行插入参考文献、修改参考文献格式等便捷的操作。`Endnote`是老牌的文献管理工具，在知名度上高于`Mendeley`。但`Mendeley`更年轻，有云存储同步服务，可以在网页端任何时间地点查看已同步的文献。并且账号有社交功能，会推送你的文献中作者的近期发表状况。也可以根据你的文献来自动推荐相关文献。
+
+`Mendeley/Endnote`不是pdf文件管理器，而是文献信息管理器。所以随时更新好每一篇文献的信息，包括作者(弄清姓和名)、杂志名称、发表年月、doi(通过doi号可以自动正确更新以上所有信息)等等。更新后的信息可以用于对本地文献快速检索，并且可以生成\*.bib文件，方便<img src="https://latex.codecogs.com/gif.latex?\inline&space;$\textsc{Bib}\TeX$" title="$\textsc{Bib}\TeX$" />把文献引入<img src="https://latex.codecogs.com/gif.latex?$\LaTeX$" title="$\LaTeX$" />文档。
+
+#### 2.5 LaTeX
+
+
 
 #### 2.2 SumatrPDF
 
@@ -18,7 +26,6 @@
 
 #### 2.4 Git/Bitbucket
 
-#### 2.5 LaTeX
 
 #### 2.6 engauge
 

@@ -99,3 +99,5 @@ Intel Complier 同样对于有edu邮箱的同学免费。
 #### 3.5 [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 要在超算上计算，首先要保证自己的代码在Linux下能够正常编译，总不能在超算的远程界面上不断调试。难道因为调试一个程序还要装一个虚拟机或是双系统。Windows 10 上的同学可以激活系统自带的Windows Subsystem for Linux(WSL)。这个系统不是虚拟机，而是完整的Linux环境，基本的界面是个命令行工具，但可以安装X11软件，使得WSL可以运行GUI软件，这样所有Linux下的GUI软件都可以在Windows下运行，效果和原生应用一样。
+
+以上工具皆免费，说了这么多目的为了同学们能不假思索地选择效率最高的工具，希望能有帮助。

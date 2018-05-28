@@ -56,6 +56,7 @@
 [SumatraPDF](https://www.sumatrapdfreader.org/free-pdf-reader.html)在Windows下配合LaTeX引擎进行预览和反向搜索(通过PDF的位置找到LaTeX中编码的位置，从而方便修改)，用户体验极佳。当然如果你不用LaTeX，SumatraPDF也是pdf阅读优秀的工具，打开大文件速度比Adobe家的快不少。各个平台类似的PDF阅读器不一样，Windows下就用[SumatraPDF](https://www.sumatrapdfreader.org/free-pdf-reader.html)，Mac下就用[Skim](https://skim-app.sourceforge.io/)，Linux下就用[Evince](https://wiki.gnome.org/Apps/Evince)。
 
 #### 2.3 [Sublime](https://www.sublimetext.com/)
+>效率决定一切
 
 做研究处理文本主要是编写各类程序代码、脚本，另外是数据处理。修改简单的代码、不用调试时，采用文本编辑工具效率最高。Sublime基于C++的实现，有当前最快的运行速度，性能卓越。插件采用Python编写，有完美的生态环境，用户广泛。所有的代码可以在Sublime中预览，插件提供高亮。上文提到的LaTeX可以通过[LaTeXTools](https://github.com/SublimeText/LaTeXTools)进行编写、调试、生成PDF，图片和公式都能预览，应该是使用率最高的LaTeX编写工具。
 
@@ -63,26 +64,38 @@
 
 Sublime另一项技术就是其卓越的搜索和编辑功能，配合列(块)操作可以轻松编辑规律性的文本文件，也支持正则表达式，方便复杂的文本编辑。
 
-#### 2.4 Git/GitHub/Bitbucket/SourceTree
+#### 2.4 [Git](https://git-scm.com/)/[GitHub](https://github.com)/[Bitbucket](https://bitbucket.org/)/[SourceTree](https://www.sourcetreeapp.com/)
+>专注眼前，托管一切
 
 本文最想推荐的就是本小节的版本控制工具。这几个东西的逻辑是这样，Git是分布式版本控制软件，由Linux作者开发，可以单机运行，也可以自行假设服务器运行。但是不是每个人都有能力假设服务器，[GitHub](https://github.com/)和[Bitbucket](https://bitbucket.org/)两个平台就站出来说，你们这些穷人，我来帮你们架设服务器。于是这两个基于Git的版本控制托管网站就产生了，并且给了用户一个页面进行管理。然后我们这些穷人又说了，每次提交更新都要上你们的网站，多麻烦。Bitbucket就说，好人做到底吧，给你一个管理工具，于是免费的[SourceTree](https://www.sourcetreeapp.com/)就出来了。当然Git本来是没有GUI的，命令行操作，功能上和SourceTree一致。Git的功能异常强大，不需要全都掌握，一张图可以解释其操作逻辑
-
-
-
-#### 2.6 Engauge
+ 
+<img src="./git_flow.png" width = "420" height = "300" alt="GitFlowFigure" />
 
 #### 2.7 Matlab
+>用最少的工具做最多的事情
+
+Matlab 作为简单计算工具用于理论检验。另一方面作为绘制图形工具功能非常强大。所有的曲线图可以用matlab画，通过export setup设置可以指定导出图形的样式，并且保存常用的图形设置，方便重复调用。绘制有限元网格的矢量图，基于OpenGL实现的基本不存在，尝试过 Asymptote，但效果不佳，常常有错误。基于本人有限的经验，Matlab是唯一能够绘制有限元网格矢量图的工具。其`Patch`函数十分强大，可以绘制多边形网格，也能给节点或者单元赋予值，从而画出云图。
 
 ### 3 编程工具
 
 #### 3.1 Visual Studio
 
-宇宙最好IDE名不虚传。在我有限的经验里，VS的代码静态分析(静态分析是指不编译不运行情况下，分析代码的语法、逻辑来验证代码的规范性和可靠性)性能是最好的。
+对于Windows下的C/C++和Fortran，宇宙最好IDE(集成开发环境)肯定是Visual Studio。在我有限的经验里，VS的代码静态分析(静态分析是指不编译不运行情况下，分析代码的语法、逻辑来验证代码的规范性和可靠性)性能是最好的。比如类成员函数、成员变量的提示，VS是最迅速最准确的。有些IDE会提示所有成员变量，却很难找到有用的，点名批评一下Mac下的Xcode。VS的调试工具也十分强悍，反应迅速，可以修改配置文件来调试复杂的数据结构。对了新版的VS可以支持跨平台的程序编写，也和Clion一样支持CMake部署工具，与时俱进毕竟宇宙第一。
+
+Visual Studio Community 版本免费。
 
 #### 3.3 Clion
 
+在没有Windows的地方，编写C++最好的IDE只能是Clion了，基于CMake的架构，可以方便地编写跨平台的程序。仿真计算为什么要写跨平台的东西？真以为自己是程序员吗？不是，大型问题可以选择超算进行高性能计算，超算只支持Linux系统，因此跨平台的程序就至关重要。这时如果在Windows下用Clion编写代码，然后通过自带的CMake来部署代码，完成后可以直接在超算上用Cmake部署、编译再运行。
+
+Clion 对于有edu邮箱的同学免费。
+
 #### 3.2 Intel Compiler
 
-#### 3.4 CMake
+市面上编译C/C++和Fortran代码的执行效率最高的就是Intel Compiler了，毕竟天下都是Intel的处理器，自家的编译器肯定开了不少小灶。带有强大的MKL数学库，计算效率毋庸置疑。
 
-#### 3.5 Windows Subsystem ---- Linux
+Intel Complier 同样对于有edu邮箱的同学免费。
+
+#### 3.5 Windows Subsystem for Linux
+
+要在超算上计算，首先要保证自己的代码在Linux下能够正常编译，总不能在超算的远程界面上不断调试。难道因为调试一个程序还要装一个虚拟机或是双系统。Windows 10 上的同学可以激活系统自带的Windows Subsystem for Linux(WSL)。这个系统不是虚拟机，而是完整的Linux环境，基本的界面是个命令行工具，但可以安装X11软件，使得WSL可以运行GUI软件，这样所有Linux下的GUI软件都可以在Windows下运行，效果和原生应用一样。
